@@ -306,3 +306,19 @@ python scripts/conflict-score.py --json input.json --output json
 所有的核心法典、协议、戒律均保留原作者意图，仅做了结构化重组与引用规范化。
 
 任何商用，请联系原作者 子夜（229164036）。
+
+---
+
+## 🙏 致谢
+
+感谢真诚、友善、团结、专业的 Linuxdo 社区，让我学到了那么多有关 AI 相关知识。
+
+[![LinuxDo community](https://img.shields.io/badge/LinuxDo-community-blue)](https://linux.do/)
+
+- [LinuxDo](https://linux.do/) 学 ai, 上 L 站!
+
+---
+
+## 💬 交流群
+
+- [点击链接加入群聊【天命-智能创作（BUG收集）】](https://qm.qq.com/q/YWivpFjKou)
