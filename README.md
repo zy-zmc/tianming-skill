@@ -1,3 +1,11 @@
+> ## 🖥️ 寻找软件版？
+>
+> 如果你更喜欢**开箱即用的桌面应用**体验，请移步 👉 **[天命-智能小说创作软件](https://github.com/zy-zmc/tianming-novel-ai-writer)**
+>
+> 无需任何提示词知识，下载即用，内置完整天命系统。
+
+---
+
 # 天命 · 长篇小说协同创作 Skill
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
@@ -322,3 +330,5 @@ python scripts/conflict-score.py --json input.json --output json
 ## 💬 交流群
 
 - [点击链接加入群聊【天命-智能创作（BUG收集）】](https://qm.qq.com/q/YWivpFjKou)
+
+群号：414086347
