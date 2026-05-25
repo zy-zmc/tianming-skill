@@ -1,3 +1,9 @@
+## 💬 交流群
+
+- [点击链接加入群聊【天命-智能创作（BUG收集）】](https://qm.qq.com/q/YWivpFjKou)
+
+群号：414086347
+
 > ## 🖥️ 寻找软件版？
 >
 > 如果你更喜欢**开箱即用的桌面应用**体验，请移步 👉 **[天命-智能小说创作软件](https://github.com/zy-zmc/tianming-novel-ai-writer)**
@@ -328,9 +334,3 @@ python scripts/conflict-score.py --json input.json --output json
 - [LinuxDo](https://linux.do/) 学 ai, 上 L 站!
 
 ---
-
-## 💬 交流群
-
-- [点击链接加入群聊【天命-智能创作（BUG收集）】](https://qm.qq.com/q/YWivpFjKou)
-
-群号：414086347
