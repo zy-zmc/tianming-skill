@@ -325,12 +325,3 @@ python scripts/conflict-score.py --json input.json --output json
 
 ---
 
-## 🙏 致谢
-
-感谢真诚、友善、团结、专业的 Linuxdo 社区，让我学到了那么多有关 AI 相关知识。
-
-[![LinuxDo community](https://img.shields.io/badge/LinuxDo-community-blue)](https://linux.do/)
-
-- [LinuxDo](https://linux.do/) 学 ai, 上 L 站!
-
----
