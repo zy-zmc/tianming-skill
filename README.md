@@ -1,9 +1,3 @@
-## 💬 交流群
-
-- [点击链接加入群聊【天命-智能创作（BUG收集）】](https://qm.qq.com/q/YWivpFjKou)
-
-群号：414086347
-
 > ## 🖥️ 寻找软件版？
 >
 > 如果你更喜欢**开箱即用的桌面应用**体验，请移步 👉 **[天命-智能小说创作软件](https://github.com/zy-zmc/tianming-novel-ai-writer)**
@@ -12,9 +6,10 @@
 
 ---
 
-# 天命 · 长篇小说协同创作 Skill
+# 天命 · 长篇小说协同创作 Skill v2.0.0
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/zy-zmc/tianming-skill)
 
 > **TianMing** — A modular AI Skill for co-writing long-form novels with Claude.
 > Restructured from a 995-line monolithic prompt into 30+ protocol files with
@@ -70,7 +65,15 @@
 ```
 
 系统会执行 [REF:core.boot.arbitration] 的【第一阶段：内殿铸魂】，
-检查所有协议绑定状态与知识库连接状态，并返回标准化报告。
+检查所有协议绑定状态、知识库连接状态与当前能力边界，并返回标准化报告。
+
+初始化后请重点看两项：
+
+- **【统一知识库核心状态】**：确认五件知识库是否齐全
+- **【能力状态】**：确认当前是否允许执行大纲、规划、目录、草案、正文、体检、存档
+
+如果《文风样本.md》缺失，系统可以继续做大纲/规划/目录，但不应继续生成正文。
+如果《世界基石.md》缺失，系统只能引导建库或体检模板，不能直接生成目录和正文。
 
 ### 4. 开始创作
 
@@ -196,10 +199,15 @@ tianming-skill/
 
 - ✅ **拆分**：995 行单文件 → 24 个核心模块文件
 - ✅ **路由化**：按指令路由按需加载（`SKILL.md` 包含完整路由表）
+- ✅ **执行闭环**：每条指令统一经历「识别 → 装配 → 校验 → 生成 → 仪表盘/续令」
+- ✅ **知识库装配契约**：明确五件知识库的优先级、缺失降级规则与真实文件优先原则
 - ✅ **引用规范化**：`[REF: xxx]` → `[REF:xxx]`（冒号后无空格）
 - ✅ **元数据补全**：每个文件顶部添加 frontmatter，标注加载条件、依赖
 - ✅ **常数集中**：所有数值常数集中到 `constants/global-constants.md`
 - ✅ **模板分离**：知识库与协议解耦，模板放在 `kb-templates/` 供用户填充
+- ✅ **目录质量门**：新增批次边界契约与交付前自检，约束章序、类型、钩子、载体DNA
+- ✅ **正文质量门**：新增正文前置装配、蓝图不可偏移清单与交付前质量门
+- ✅ **体检升级**：体检报告输出问题清单、风险分级、阻塞项和建议执行指令
 - ✅ **指令格式统一**：所有含参数指令统一为 `「天命：xxx | 卷[X] 第[Y]章」` 标准格式 + 简写兼容
 - ✅ **引用 Lint**：`scripts/reference-linter.ps1` 自动校验 `[ID]/[REF]/[KERNEL_REF]/[VAR]` 完整性
 - ✅ **冲突值脚本化**：`scripts/conflict-score.py` 让冲突值量化可被 Claude 用 code-execution 调用
@@ -325,3 +333,18 @@ python scripts/conflict-score.py --json input.json --output json
 
 ---
 
+## 🙏 致谢
+
+感谢真诚、友善、团结、专业的 Linuxdo 社区，让我学到了那么多有关 AI 相关知识。
+
+[![LinuxDo community](https://img.shields.io/badge/LinuxDo-community-blue)](https://linux.do/)
+
+- [LinuxDo](https://linux.do/) 学 ai, 上 L 站!
+
+---
+
+## 💬 交流群
+
+- [点击链接加入群聊【天命-智能创作（BUG收集）】](https://qm.qq.com/q/YWivpFjKou)
+
+群号：414086347

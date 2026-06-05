@@ -31,10 +31,23 @@
 
 [CmdletBinding()]
 param(
-    [string]$SkillPath = (Split-Path -Parent $PSScriptRoot),
+    [string]$SkillPath = '',
     [string]$OriginalPrompt = '',
     [switch]$Json
 )
+
+if ([string]::IsNullOrWhiteSpace($SkillPath)) {
+    $scriptRoot = if (-not [string]::IsNullOrWhiteSpace($PSScriptRoot)) {
+        $PSScriptRoot
+    }
+    elseif ($MyInvocation.MyCommand.Path) {
+        Split-Path -Parent $MyInvocation.MyCommand.Path
+    }
+    else {
+        Join-Path (Get-Location).Path 'scripts'
+    }
+    $SkillPath = Split-Path -Parent $scriptRoot
+}
 
 # ============================================================================
 # 工具函数
