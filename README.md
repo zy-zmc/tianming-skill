@@ -1,10 +1,10 @@
 ## P.s：不需要刻意进群，开源版自己部署，不需要卡密，开源说明中有明确的去处登录卡密的方式，查看 开源说明.md。交流群现在作为开源互助群。天命全部新源码丢失，新项目天衍完全区和天命是2个项目，吸收天命的优势开发的
-## 新项目天衍 https://github.com/zy-zmc/tianyan
-## 交流群
+## 新项目天衍 https://github.com/zy-zmc/tianyan 
+## 交流群（天命群解散了，目前只有天衍新群：1109118979）
+点击链接加入群聊【天衍 - BUG收集】：https://qm.qq.com/q/JTd9adGY4o
 
-- [点击链接加入群聊【天命-智能创作（BUG收集）】](https://qm.qq.com/q/YWivpFjKou)
+<img width="307" height="370" alt="9c9d2e74-f1db-4e54-ac89-fbf794c750f9" src="https://github.com/user-attachments/assets/fd32cf6a-1be5-445f-a8b7-6203bcff5843" />
 
-群号：414086347
 
 > ## 🖥️ 寻找软件版？
 >
